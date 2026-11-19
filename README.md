@@ -1,6 +1,6 @@
 PRISE EN MAIN PYTORCH : MLP (jeu breast-cancer sklearn)
 
-Ce dépôt contient mon premier réseau de neurones sous pytorch. Je l'ai écrit en découvrant pytorch et en étudiant la théorie en parallèle.
+Ce dépôt contient mon premier réseau de neurones sous pytorch. Je l'ai écrit en découvrant pytorch et en étudiant la théorie en parallèle. Les annotations sur le code sont les miennes.
 
 Objectif : Entraîner un perceptron multicouche pour une classification binaire sur un petit jeu tabulaire, afin de me familiariser avec la pytorch (tenseurs, nn.Module, fonction de perte, optimiseur, boucle d'entraînement, évaluation)
 

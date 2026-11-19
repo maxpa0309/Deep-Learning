@@ -53,7 +53,7 @@ class MLP(nn.Module):
 
 model = MLP(input_dim=X_train.shape[1]).to(device) #X_train.shape[1] = nombre de features du dataset breast cancer, ici 30. .to(device) = envoie le modèle sur GPU si disponible, sinon CPU
 criterion = nn.BCEWithLogitsLoss() #calcul de la fonction perte cross entropy binaire, sigmoide déjà appliquée dans la fonction de perte donc pas besoin de l'appliquer dans le forward du modèle
-optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-4) #algo adam pour optimisation des poids, weight_decay = régularisation L2 pour éviter overfitting. Utilise le calcul des gradients pour mettre à jour les poids du modèle
+optimizer = torch.optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-4) #algo adam pour optimisation des poids, weight_decay = régularisation L2 pour éviter overfitting, utilise le calcul des gradients pour mettre à jour les poids du modèle
 
 
 epochs = 50

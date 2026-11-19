@@ -9,8 +9,8 @@ Données : jeu breast cancer de sklearn (sklearn.datasets.load_breast_cancer) de
 Séparation entrainement/test : test = 20%, entrainement 80%, graine aléatoire = 50
 Prétraitement: normalisation avec transform() sur data test et fit.transform() sur train test
 
-Modèle et entraînement : Architecture : mlp à 2 hidden layers, entrée 30 -> 64 -> 32 -> sortie 1 pour classification binaire (avec dropout(0.2) après la 1re activation pour éviter surapprentissage)
-Il s'entraîne pendant 50 époques par petits lots (batchs de 32 à l'entraînement, 64 au test) avec l'optimiseur Adam (learning rate=0.001 et une légère régularisation weight_decay=1e-4). La fonction de perte BCEWithLogitsLoss mesure l'erreur en intégrant directement la sigmoïde pour plus de stabilité numérique.
+Modèle et entraînement : Architecture : mlp à 2 hidden layers, entrée 30 -> 64 -> 32 -> sortie 1 pour classification binaire (avec dropout(0.2) après la 1re activation pour éviter surapprentissage).
+Entrainement pendant 50 époques par petits lots (batchs de 32 à l'entraînement, 64 au test) avec l'optimiseur Adam (learning rate=0.001 et une légère régularisation weight_decay=1e-4). La fonction de perte BCEWithLogitsLoss mesure l'erreur en intégrant directement la sigmoïde pour plus de stabilité numérique.
 
 Resultats: accuracy sur le jeu de test : 0.9824561403508771 (98.24561403508771 %)
 
